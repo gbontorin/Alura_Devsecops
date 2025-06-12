@@ -1,0 +1,24 @@
+MPPR Semana 2
+
+1) Diferencie CI, CD e Deploy Contínuo
+
+CI: termo que significa Integração Contínua ou Continuos Integration
+
+CD: termo que significa Continous Delivery ou Entrega contínua. Ela engloba tudo que a CI faz e mais. As modificações e atualizações são enviadas para a homologação. Não existe razão técnica para segurar as alterações, que são seguras e funcionais, mas podem haver razões de negócio.
+
+Deploy contínuo é o mais global dos três. Ela engloba tudo que a CD faz mais. Além disso, as modificações vão de fato para o ambiente de produção.
+
+
+2) Explique o pipeline de entrega
+
+
+Pipeline de Entrega é um fluxo automatizado composto de processos e ferramentas para que as equipes de desenvolvimento entreguem valor ao usuário ou negócio de forma ágil, segura e eficiente. Ele é composto das fases: 
+
+a. Código: normalmente com um repositório versionado, os desenvolvedores compõem os códigos-fontes para as próximas etapas.
+b. Build ou compilação: o código é compilado para criar um pacote ou executável
+
+
+
+3) Cite ao menos um padrão de release e sua utilidade
+
+O Blue/Green Deployment é uma técnica de release. Sua utilidade é ter um "zero downtime" ou seja, a aplicação não fica offline. A volta para a versão anterior també é facilitada, pois ela está online. Imaginemos que a versão antiga (azul) está em produção. A versão nova (verde), também vai para um ambiente de produção, sem retirar a anterior. Um roteador controla o fluxo das requestes. No começo uma pequena parte vai para a versão verde e gradativamente aumenta-se o fluxo. A versão antiga fica o tempo necessário para que se considere a versão verde funcional.
