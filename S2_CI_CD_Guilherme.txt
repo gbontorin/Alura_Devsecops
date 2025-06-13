@@ -2,21 +2,22 @@ MPPR Semana 2
 
 1) Diferencie CI, CD e Deploy Contínuo
 
-CI: termo que significa Integração Contínua ou Continuos Integration
+CI: termo que significa Integração Contínua ou Continuos Integration. É uma prática de desenvolvimento que exige a integração do código para o repositório compartilhado várias vezes ao dia. Na prática, há commits frequentes e bem descritos, testes automatizados (unitários, integração).
 
-CD: termo que significa Continous Delivery ou Entrega contínua. Ela engloba tudo que a CI faz e mais. As modificações e atualizações são enviadas para a homologação. Não existe razão técnica para segurar as alterações, que são seguras e funcionais, mas podem haver razões de negócio.
+CD: termo que significa Continous Delivery ou Entrega contínua. Ela engloba tudo que a CI faz e mais. As modificações e atualizações são enviadas para a homologação. Não existe razão técnica para segurar as alterações, que são seguras e funcionais, mas podem haver razões de negócio. Assim, mantem-se a aplicação sempre pronta para ser implantada. 
 
-Deploy contínuo é o mais global dos três. Ela engloba tudo que a CD faz mais. Além disso, as modificações vão de fato para o ambiente de produção.
+Deploy contínuo é o mais global dos três. Ela engloba tudo que a CD faz e mais. Além disso, as modificações vão de fato para o ambiente de produção.
 
 
 2) Explique o pipeline de entrega
 
+Pipeline de Entrega é um fluxo automatizado composto de processos e ferramentas para que as equipes de desenvolvimento entreguem valor ao usuário ou negócio de forma ágil, segura e eficiente. As etapas clássicas são: 
 
-Pipeline de Entrega é um fluxo automatizado composto de processos e ferramentas para que as equipes de desenvolvimento entreguem valor ao usuário ou negócio de forma ágil, segura e eficiente. Ele é composto das fases: 
-
-a. Código: normalmente com um repositório versionado, os desenvolvedores compõem os códigos-fontes para as próximas etapas.
-b. Build ou compilação: o código é compilado para criar um pacote ou executável
-
+a. Código: com um repositório versionado, os desenvolvedores compõem os códigos-fontes para as próximas etapas.
+b. Build ou compilação: gera-se o artefato a partir do código
+c. Teste: valida-se com testes automatizados
+d. Release: prepara-se para implantação
+e. Deploy: põem-se em produção. 
 
 
 3) Cite ao menos um padrão de release e sua utilidade
