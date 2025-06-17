@@ -1,0 +1,15 @@
+1.
+docker build -t minha-app .
+
+docker run -p 3000:3000 minha-app
+
+
+2.
+docker network create minha-rede
+
+docker run -d --name meu-banco --network minha-rede mongo
+
+docker run -it --network minha-rede -e MONGO_URL=mongodb://meu-banco:27017 minha-app
+
+3.
+docker-compose up
